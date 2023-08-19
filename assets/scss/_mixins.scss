@@ -1,0 +1,9 @@
+@mixin btn-shadow($color) {
+    box-shadow: 0px 33px 285px rgba(255, 166, 0, 0.3), 0px 15.2569px 131.764px rgba(255, 166, 0, 0.222503), 0px 8.72965px 75.3924px rgba(255, 166, 0, 0.188034), 0px 5.29883px 45.7627px rgba(255, 166, 0, 0.161984), 0px 3.19278px 27.574px rgba(255, 166, 0, 0.138016), 0px 1.77795px 15.355px rgba(255, 166, 0, 0.111966), 0px 0.764683px 6.60408px rgba(255, 166, 0, 0.0774974);
+}
+
+@mixin btn-opacity($color) {
+    background-color: rgba($color, .1);
+    color: $color;
+    border: 0;
+}

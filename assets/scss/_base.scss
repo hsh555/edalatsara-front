@@ -1,0 +1,128 @@
+// .custom-progress {
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+
+//   .custom-progress__title {
+//     font-weight: 500;
+//     font-size: 12px;
+//     line-height: 119.5%;
+//     margin-left: 6px;
+//     color: rgba($dark, 0.5);
+//   }
+// }
+
+// .swal2-container {
+//   background-color: rgba($black, 0.5);
+
+//   &.sweetalert--success {
+//     .swal2-title {
+//       color: $success;
+//     }
+
+//     .sweet-alert__img {
+//       background-color: rgba($success, 0.1);
+//     }
+//   }
+
+//   &.sweetalert--danger {
+//     .swal2-title {
+//       color: $danger;
+//     }
+
+//     .sweet-alert__img {
+//       background-color: rgba($danger, 0.1);
+//     }
+//   }
+
+//   &.sweetalert--info {
+//     .swal2-title {
+//       color: $info;
+//     }
+
+//     .sweet-alert__img {
+//       background-color: rgba($info, 0.1);
+//     }
+//   }
+
+//   &.sweetalert--primary {
+//     .swal2-title {
+//       color: $primary;
+//     }
+
+//     .sweet-alert__img {
+//       background-color: rgba($primary, 0.1);
+//     }
+//   }
+
+//   &.sweetalert--warning {
+//     .swal2-title {
+//       color: $warning;
+//     }
+
+//     .sweet-alert__img {
+//       background-color: rgba($warning, 0.1);
+//     }
+//   }
+
+//   .sweet-alert__img {
+//     width: 140px;
+//     min-width: 140px;
+//     max-width: 140px;
+//     height: 140px;
+//     border-radius: 100%;
+//     padding: 40px;
+//   }
+
+//   .swal2-popup {
+//     width: 100%;
+//     max-width: 640px;
+//     border-radius: $border-radius;
+//     background-color: $white;
+//     padding: 14px 14px 38px;
+//   }
+
+//   .swal2-title {
+//     font-weight: 700;
+//     font-size: 32px;
+//     line-height: 123.5%;
+//   }
+
+//   .swal2-html-container {
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 34px;
+//   }
+// }
+
+.owl-carousel {
+  .owl-nav {
+    button {
+      width: 25px;
+      height: 25px;
+      background-color: #efefef !important;
+      position: absolute;
+      top: calc(50% - 12.5px);
+      text-align: center;
+      border-radius: 100%;
+
+      img {
+        width: 6px;
+        line-height: 25px;
+        margin: auto;
+      }
+
+      &:hover {
+        background-color: $gray !important;
+      }
+
+      &.owl-prev {
+        right: -12px;
+      }
+
+      &.owl-next {
+        left: -12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "variables";
+
+// bootstrap;
+@import "bootstrap/bootstrap";
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// core
+@import "reset";
+@import "iransans";
+@import "mixins";
+@import "utils";
+@import "base";
+@import "common";

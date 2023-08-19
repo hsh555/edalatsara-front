@@ -1,0 +1,28 @@
+.article-poster {
+    .article-poster__badge {
+        background-color: $white;
+        border-radius: $border-radius;
+        padding: 4px 6px;
+        position: absolute;
+        top: 16px;
+        font-size: $font-sm;
+        font-weight: 500;
+        
+
+        &.article-poster__badge--right {
+            right: 14px;
+        }
+
+        &.article-poster__badge--left {
+            left: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .article-poster {
+        .article-poster__badge {
+            font-size: $font-sm - 1px !important;
+        }
+    }
+}

@@ -1,0 +1,1153 @@
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: none;
+  border: 0;
+
+  .card-header {
+    background-color: $white;
+    border-color: #ccc;
+  }
+
+  h1.card-title {
+    font-weight: 700;
+    font-size: $font-md;
+    line-height: 26px;
+  }
+
+  h3.card-title {
+    font-weight: 500;
+    font-size: $font-lg - 2px;
+    line-height: 34px;
+    margin-bottom: 12px;
+  }
+
+  .card-body {
+    padding: 0;
+    p {
+      font-weight: 500;
+      font-size: $font;
+      line-height: 30px;
+      text-align: justify;
+    }
+
+    ul {
+      padding-right: 22px;
+      li {
+        font-weight: 500;
+        font-size: $font;
+        line-height: 30px;
+        list-style-type: disc;
+        margin-bottom: 4px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    border: 0;
+  }
+
+  .team-member {
+    text-align: center;
+    .team-member__img {
+      border-radius: 100%;
+      margin-bottom: 14px;
+
+      img {
+        border-radius: 100%;
+      }
+    }
+
+    .team-member__name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 4px;
+    }
+
+    .team-member__position {
+      font-weight: 500;
+      font-size: $font-sm + 1px;
+      line-height: 19px;
+      color: #888;
+    }
+  }
+}
+
+.feature-card {
+  background-color: $primary;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  img {
+    width: 63px;
+  }
+
+  .feature-card__title {
+    color: $white;
+    font-size: 17px;
+    line-height: 25.5px;
+    font-weight: 700;
+    margin-top: 14px;
+  }
+
+  &.feature-card--sm {
+    img {
+      width: 54px;
+    }
+
+    .feature-card__title {
+      color: $white;
+      font-size: $font;
+      line-height: 23px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+  }
+}
+
+.post-card {
+  border-radius: 15px;
+  background-color: $white;
+  padding: 0;
+  display: flex;
+
+  .post-card__img {
+    width: 210px;
+    min-width: 210px;
+    height: 160px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .badge {
+      position: absolute;
+      top: 11px;
+      right: 11px;
+    }
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .post-card__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .post-card__title {
+    font-weight: 700;
+    font-size: $font;
+    line-height: 119%;
+    color: $black;
+  }
+
+  .post-card__tag {
+    font-weight: 600;
+    font-size: $font-sm;
+    line-height: 15px;
+    display: inline-block;
+    padding: 4px 6px;
+    border: 0.5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background: #f3f8fb;
+    color: $black;
+    margin-left: 4px;
+
+    &:last-of-type {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: #e8eaeb;
+    }
+  }
+
+  .post-card__info {
+    & > span {
+      font-weight: 400;
+      font-size: $font-sm - 1px;
+      margin-left: 8px;
+
+      &:last-of-type {
+        margin-left: 0;
+      }
+    }
+
+    .icon {
+      margin-right: 2px;
+      vertical-align: -2px;
+    }
+  }
+
+  .post-card__text {
+    font-weight: 400;
+    font-size: $font - 2px;
+    line-height: 27px;
+    text-align: justify;
+  }
+}
+
+.player-card {
+  background-color: $white;
+  border-radius: 15px;
+  padding: 14px 20px;
+  display: flex;
+
+  .player-card__img {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 16px;
+  }
+
+  .player-card__name {
+    margin-bottom: 6px;
+    a {
+      font-weight: 700;
+      font-size: $font;
+      line-height: 119%;
+      color: $black;
+    }
+  }
+
+  .player-card__property {
+    font-weight: 400;
+    font-size: $font - 2px;
+    line-height: 25px;
+  }
+}
+
+.simple-tag-card {
+  position: relative;
+  font-weight: 600;
+  font-size: $font-sm;
+  line-height: 17px;
+  text-align: center;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .simple-tag-card__img {
+    width: 100%;
+    height: 75px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.news-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  padding: 14px 19px 8px;
+  border: 1px solid #cccccc;
+  min-height: 144px;
+  display: flex;
+  flex-direction: column;
+
+  .news-card__header {
+    margin-bottom: 8px;
+  }
+
+  .news-card__title {
+    font-weight: 700;
+    font-size: $font;
+    line-height: 23px;
+    color: $black;
+  }
+
+  .news-card__body {
+    font-weight: 400;
+    font-size: $font-sm;
+    line-height: 21px;
+    margin-bottom: 5px;
+    text-align: justify;
+
+    &.news-card__body--survey {
+      font-weight: 700;
+    }
+  }
+
+  .news-card__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    .category {
+      font-weight: 500;
+      font-size: $font-sm;
+      line-height: 21px;
+      color: $danger;
+    }
+
+    .date {
+      font-weight: 400;
+      font-size: $font-xsm;
+      line-height: 21px;
+    }
+  }
+}
+
+.video-card {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: $border-radius;
+  padding: 12px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.2s ease box-shadow;
+
+  &:hover {
+    box-shadow: inset 0px 4px 4px 500px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-card__link {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .badge {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+
+  .video-card__play-icon {
+    width: 40px;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+  }
+
+  .video-card__title {
+    font-weight: 700;
+    font-size: $font - 2px;
+    line-height: 20px;
+    color: $white;
+  }
+}
+
+.image-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: $border-radius;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .image-card__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .image-card__date {
+    font-weight: 400;
+    font-size: $font-sm + 1px;
+    line-height: 21px;
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 5px;
+    }
+  }
+
+  .image-card__title {
+    margin-bottom: 11px;
+    margin-bottom: 12px;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .image-card__subtitle {
+    font-weight: 400;
+    font-size: $font - 2px;
+    line-height: 20px;
+    color: $white;
+  }
+}
+
+.play-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  padding: 14px 154px;
+  border-radius: $border-radius;
+  position: relative;
+
+  &.play-card--simple {
+    padding: 14px 130px;
+    .play-card__team {
+      font-weight: 700;
+      font-size: $font;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+    }
+
+    .play-card__result {
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background-color: initial;
+      font-weight: 700;
+      font-size: $font;
+      line-height: 23px;
+      color: $black;
+      margin: 0 10px;
+    }
+
+    .play-card__league {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: $font - 1px;
+      line-height: 23px;
+      position: absolute;
+      right: 12px;
+
+      img {
+        width: 46px;
+      }
+    }
+
+    .play-card__video {
+      position: absolute;
+      left: 12px;
+      font-size: $font - 1px;
+      font-weight: 700;
+      line-height: 23px;
+
+      .icon {
+        vertical-align: -6px;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .play-card__body {
+    display: flex;
+    align-items: center;
+  }
+
+  .play-card__league {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: $font;
+    line-height: 23px;
+    position: absolute;
+    right: 20px;
+
+    img {
+      width: 56px;
+    }
+  }
+
+  .play-card__video {
+    position: absolute;
+    left: 20px;
+    font-size: $font;
+    font-weight: 700;
+    line-height: 23px;
+
+    .icon {
+      vertical-align: -6px;
+      margin-right: 10px;
+    }
+  }
+
+  .play-card__team {
+    font-weight: 700;
+    font-size: $font-lg;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 54px;
+    }
+  }
+
+  .play-card__result {
+    width: 192px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    background-color: #e7dada;
+    font-weight: 700;
+    font-size: $font-md + 2px;
+    line-height: 29px;
+    color: $black;
+    margin: 0 40px;
+  }
+}
+
+.simple-image-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: $border-radius;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+
+  .simple-image-card__title {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 23px;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .badge {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .simple-image-card__link {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+.outline-card {
+  .outline-card__title {
+    font-size: $font;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+
+  .outline-card__text {
+    font-size: $font-sm - 1px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+}
+
+.simple-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba($blue, .7);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .simple-card__img {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+    margin-left: 16px;
+  }
+
+  .simple-card__title {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: $font;
+    line-height: 23px;
+    color: $black;
+  }
+
+  .simple-card__date {
+    font-weight: 400;
+    font-size: $font-sm + 1px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 5px;
+      margin-bottom: 1px;
+    }
+  }
+}
+
+.simple-small-card {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-bottom: 1px solid #ccc;
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  .counter {
+    font-weight: 700;
+    font-size: $font-md + 2;
+    line-height: 21px;
+    margin-left: 10px;
+  }
+
+  .simple-small-card__img {
+    width: 43px;
+    min-width: 43px;
+    height: 43px;
+    border-radius: $border-radius-sm;
+    margin-left: 6px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  .simple-small-card__title {
+    font-weight: 400;
+    font-size: $font-sm + 1px;
+    line-height: 19px;
+    color: $black;
+    display: flex;
+
+    .icon {
+      margin-left: 6px;
+      margin-top: 1px;
+    }
+  }
+}
+
+.simple-post-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid #ccc;
+
+  .simple-post-card__img {
+    width: 160px;
+    min-width: 160px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .card-body {
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .simple-post-card__title {
+    font-weight: 700;
+    font-size: $font - 1px;
+    line-height: 20px;
+    color: $blue;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .simple-post-card__text {
+    font-weight: 400;
+    font-size: $font - 2px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .simple-post-card__info {
+    margin-top: auto;
+    & > span {
+      font-weight: 400;
+      font-size: $font-sm - 1px;
+      margin-left: 8px;
+
+      &:last-of-type {
+        margin-left: 0;
+      }
+    }
+
+    .icon {
+      margin-right: 2px;
+      vertical-align: -2px;
+    }
+  }
+}
+
+.advance-video-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    .advance-video-card__img {
+      .advance-video-card__img__link {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .advance-video-card__img {
+    position: relative;
+
+    .advance-video-card__img__link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+  }
+
+  .advance-video-card__body {
+    padding: 10px 12px;
+  }
+
+  .advance-video-card__title {
+    font-weight: 700;
+    font-size: $font-sm;
+    line-height: 17px;
+    color: $black;
+    margin-bottom: 2px;
+
+    a {
+      color: $black;
+    }
+  }
+
+  .advance-video-card__date {
+    font-weight: 400;
+    font-size: $font-sm;
+    line-height: 14px;
+    color: $dark;
+  }
+
+  .advance-video-card__play-icon {
+    position: absolute;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
+  }
+
+  .badge {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    z-index: 1;
+  }
+
+  .pin {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    z-index: 1;
+    background-color: $white;
+    border-radius: $border-radius;
+
+    .icon {
+      display: block;
+    }
+  }
+
+  .watermark {
+    position: absolute;
+    bottom: 9px;
+    z-index: 1;
+    background-color: $white;
+    border-radius: $border-radius;
+    font-size: $font-sm;
+    font-weight: 600;
+    padding: 0 6px;
+    color: $black;
+    right: calc(50% - 53px);
+  }
+}
+
+.play-result-card {
+  background-color: $white;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+
+  .play-result-card__team {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: $font-sm;
+
+    img {
+      width: 25px;
+      min-width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-left: 4px;
+    }
+  }
+
+  .card-header {
+    padding: 12px 6px;
+  }
+
+  .card-body {
+    padding: 12px 10px 12px 6px;
+    background-color: #d9d9d9;
+    font-size: $font-sm;
+    font-weight: 700;
+
+    .icon {
+      margin-left: 4px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .play-card {
+    padding: 14px 140px;
+    // &.play-card--simple {
+    //   .play-card__league {
+    //     img {
+    //       width: 36px;
+    //       min-width: 36px;
+    //     }
+    //   }
+    // }
+
+    .play-card__result {
+      height: 34px;
+      margin-right: 10px;
+      margin-left: 10px;
+      width: 106px;
+      font-size: $font;
+      gap: 10px;
+    }
+
+    .play-card__team {
+      font-size: $font-md;
+    }
+
+    .play-card__league {
+      font-size: $font - 2px;
+      img {
+        width: 46px;
+        min-width: 46px;
+      }
+    }
+
+    .play-card__video {
+      font-size: $font - 2px;
+
+      .icon {
+        width: 24px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    padding: 16px;
+
+    .card-title {
+      font-size: $font-md;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .card-body {
+      p,
+      div {
+        font-size: $font - 2px;
+        // line-height: 1.6;
+      }
+
+      ul {
+        padding-right: 22px;
+        li {
+          font-size: $font - 2px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  // .play-card {
+  //   &.play-card--simple {
+  //     .play-card__league {
+  //       img {
+  //         width: 36px;
+  //         min-width: 36px;
+  //       }
+  //     }
+  //   }
+
+  //   .play-card__team {
+  //     img {
+  //       display: none;
+  //     }
+  //   }
+
+  //   .play-card__league {
+  //     img {
+  //       width: 36px;
+  //       min-width: 36px;
+  //     }
+  //   }
+  // }
+}
+
+@media only screen and (max-width: 675px) {
+  // .play-card {
+  //   &.play-card--simple {
+  //     // padding: 14px 54px;
+  //     // .play-card__league {
+  //     //   span {
+  //     //     display: none;
+  //     //   }
+  //     // }
+  //   }
+
+  //   // padding: 14px 54px;
+  //   // .play-card__league {
+  //   //   span {
+  //   //     display: none;
+  //   //   }
+  //   // }
+
+  //   .play-card__team {
+  //     font-size: $font - 2px !important;
+  //   }
+
+  //   .play-card__result {
+  //     gap: 10px;
+  //   }
+
+  //   // .play-card__video {
+  //   //   span:not(.icon) {
+  //   //     display: none;
+  //   //   }
+  //   // }
+  // }
+}
+
+@media only screen and (max-width: 620px) {
+  .simple-post-card {
+    border: 0;
+    padding: 6px;
+
+    .simple-post-card__title {
+      font-size: $font-sm + 1px;
+      margin-bottom: 5px;
+    }
+
+    .simple-post-card__img {
+      width: 120px;
+      min-width: 120px;
+      height: max-content;
+      border-radius: $border-radius;
+      overflow: hidden;
+    }
+
+    .card-body {
+      padding: 4px 10px;
+    }
+  }
+
+  .simple-post-card__text {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap !important;
+    width: calc(100vw - 208px) !important;
+    // max-width: 370px;
+    font-size: 13px !important;
+  }
+
+  .simple-card {
+    .simple-card__title {
+      font-size: 13px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .post-card {
+    // flex-direction: row;
+    &.post-card--responsive {
+      padding: 6px;
+
+      .post-card__title {
+        font-size: $font - 3px;
+        margin-bottom: 5px;
+      }
+
+      .post-card__header {
+        flex-direction: column;
+      }
+
+      .post-card__img {
+        width: 120px;
+        min-width: 120px;
+        height: max-content;
+
+        .badge {
+          display: none;
+        }
+      }
+
+      .post-card__text {
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap !important;
+        width: calc(100vw - 165px) !important;
+        // max-width: 370px;
+        font-size: 13px !important;
+      }
+
+      .post-card__header {
+        margin: 0;
+      }
+
+      .post-card__tag {
+        font-size: $font-xsm;
+        padding: 3px 7px;
+      }
+
+      .card-body {
+        padding: 4px 10px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .advance-video-card {
+    &.advance-video-card--responsive {
+      padding: 6px;
+      flex-direction: row;
+      border: 0;
+
+      .advance-video-card__img {
+        width: 120px;
+        min-width: 120px;
+        height: max-content;
+        border-radius: $border-radius;
+        overflow: hidden;
+      }
+
+      .advance-video-card__title {
+        font-size: $font - 3px !important;
+      }
+
+      .advance-video-card__body {
+        width: 100%;
+        padding: 4px 10px;
+      }
+
+      .advance-video-card__play-icon {
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+
+        svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .pin {
+        border-radius: $border-radius-sm;
+        .icon {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .player-card {
+    padding: 12px 10px;
+    .player-card__img {
+      width: 65px;
+      min-width: 65px;
+      height: 65px;
+    }
+  }
+
+  .feature-card {
+    .feature-card__title {
+      font-size: 14px;
+    }
+  }
+}

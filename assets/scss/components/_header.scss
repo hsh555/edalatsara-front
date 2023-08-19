@@ -1,0 +1,252 @@
+.header {
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 25px;
+
+  .header__top {
+    padding: 6px 0;
+    background-color: $primary;
+  }
+
+  .header__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__topbar__right,
+    .header__topbar__left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header__topbar__link {
+      font-weight: 700;
+      font-size: $font - 2px;
+      color: $white;
+      padding: 0 5px;
+    }
+
+    .header__topbar__icon {
+      font-weight: 700;
+      font-size: $font - 2px;
+      color: $white;
+      display: flex;
+      align-items: center;
+    }
+
+    .header__topbar__auth {
+      .login-btn {
+        .icon {
+          vertical-align: -7px;
+        }
+      }
+
+      .register-btn {
+        .icon {
+          vertical-align: -3px;
+        }
+      }
+    }
+
+    .icon {
+      display: inline-block;
+    }
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding: 4px;
+    box-shadow: none;
+    .navbar-toggler-icon {
+      background-image: unset;
+      display: block;
+      width: 30px;
+      height: 22px;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .navbar-brand {
+    max-width: 228px;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin-left: 5px;
+
+      &:last-of-type {
+        margin-left: 0;
+      }
+
+      &.dropdown {
+        .nav-link::after {
+          display: none;
+        }
+
+        .dropdown-menu {
+          width: 580px;
+          top: 128%;
+          border-radius: $border-radius;
+          background-color: $white;
+          padding: 20px 30px;
+          right: 0;
+          border: 0;
+          box-shadow: 0 0 8px -3px rgba($dark, 0.5);
+
+          .dropdown-menu__inner {
+            direction: rtl;
+            text-align: right;
+            gap: 28px;
+          }
+
+          .dropdown-menu__group {
+            .dropdown-menu__group__title {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 160%;
+              color: $black;
+              margin-bottom: 7px;
+
+              .icon {
+                margin-left: 8px;
+                opacity: 0.7;
+                vertical-align: 3px;
+              }
+            }
+
+            .dropdown-menu__group__links {
+              display: flex;
+              flex-direction: column;
+
+              a {
+                font-weight: 500;
+                font-size: $font - 2px;
+                line-height: 160%;
+                color: #444;
+                margin-bottom: 3px;
+
+                &:hover {
+                  color: $danger;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      font-weight: 700;
+      font-size: $font;
+      line-height: 25px;
+      color: $black;
+
+      .icon {
+        opacity: 0.5;
+        margin-right: 4px;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .header__bottom {
+    background-color: #fff;
+    padding: 0;
+    position: sticky;
+    top: 0;
+  }
+
+  .header__search-form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    .header__search-form__btn {
+      height: 50px !important;
+      width: 50px !important;
+      min-width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 !important;
+      margin-left: 12px;
+      .icon {
+        width: auto;
+        margin: 0 !important;
+      }
+    }
+
+    .form-group {
+      height: 50px;
+      display: flex;
+    }
+
+    .form-control {
+      box-shadow: none;
+      background-color: #f8f6f4;
+      border: 1px solid #f8f6f4;
+      transition: 0.2s ease border-color;
+
+      &:focus {
+        border-color: #ccc;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    .header__search-form {
+      .header__search-form__btn {
+        margin-left: 0;
+      }
+
+      .form-control {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    .navbar-brand {
+      display: none;
+      width: 75px;
+    }
+
+    .header__topbar__icon {
+      font-size: 12px;
+    }
+
+    .navbar-toggler {
+      margin-left: auto;
+    }
+
+    .navbar {
+      height: 70px;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    .header__search-form {
+      .header__search-form__btn {
+        margin-left: 0;
+      }
+
+      .form-control {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.page-title {
+  h5 {
+    font-weight: 500;
+    font-size: $font;
+    line-height: 23px;
+    color: #fcf6f6;
+    background-color: $danger;
+    width: fit-content;
+    padding: 0 42px 0 64px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .page-title__inner {
+    display: flex;
+    background: linear-gradient(270.04deg, rgba(210, 19, 18, 0.14) 13.21%, rgba(210, 19, 18, 0) 100%);
+    & > span {
+      display: inline-block;
+      &:nth-child(1) {
+        width: 10px;
+        height: 35px;
+        background-color: $danger;
+        margin-left: 2px;
+      }
+      &:nth-child(2) {
+        width: 4px;
+        height: 35px;
+        background-color: $danger;
+        margin-left: 2px;
+      }
+      &:nth-child(3) {
+        width: 4px;
+        height: 35px;
+        background-color: $danger;
+        margin-left: 2px;
+      }
+      &:nth-child(4) {
+        width: 4px;
+        height: 35px;
+        background-color: $danger;
+        margin-left: 2px;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 567px) {
+//   .page-title {
+//     h5 {
+//       width: 100%;
+//     }
+//   }
+// }

@@ -1,0 +1,56 @@
+.breadcrumb-nav {
+    background-color: $white;
+    padding: 12px 22px;
+    border-radius: $border-radius;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .breadcrumb-nav__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: $danger;
+    }
+}
+
+.breadcrumb {
+    margin: 0;
+
+    .breadcrumb-item {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: $danger;
+        margin-left: 20px;
+
+        &:last-of-type {
+            &::after {
+                display: none;
+            }
+        }
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-image: url($icons-path + '/chevron-left.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+            margin-right: 20px;
+        }
+
+        a {
+            color: $danger;
+        }
+    }
+}
